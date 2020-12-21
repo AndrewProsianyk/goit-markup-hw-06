@@ -752,9 +752,24 @@ margin-bottom: 12px;
 .form-input {
   width: 448px;
   height: 40px;
-  padding: 11px 40px;
+  padding: 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.input-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.field-box:focus-within .form-input {
+  border-color: var(--accent-color);
+
+}
+.field-box:focus-within .input-icon{
+  fill: var(--accent-color);
+}
+.form-label:focus-within .comments-input {
+  border-color: var(--accent-color);
 
 }
 .field-box {
@@ -783,6 +798,8 @@ margin-bottom: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .checkbox-label {
   font-style: normal;
