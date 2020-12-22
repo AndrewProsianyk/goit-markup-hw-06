@@ -517,7 +517,7 @@ text-transform: uppercase;
 
 .subscription-form {
   
-  margin-left: 93px;
+  margin-left: auto;
   margin-top: 12px;
 }
 .button.subscription {
